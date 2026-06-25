@@ -1,23 +1,1046 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://direct.reliabledone.com/car-insurance-warning"
+    },
+    "headline": "자동차보험 안들면 발생하는 법적 처벌과 과태료 비교 가이드",
+    "description": "자동차보험 안들면 청구되는 비사업용, 사업용 및 이륜차 과태료 산정 기준과 1년 이하의 징역 또는 1000만원 이하의 벌금 등 형사적 리스크를 분석합니다. 2026년 최신 규정과 연령별 평균 가격 비교 정보를 담고 있습니다.",
+    "author": {
+      "@type": "Organization",
+      "name": "자동차보험 분석 전문가 그룹",
+      "url": "https://direct.reliabledone.com"
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": "종합금융 법률 가이드",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://direct.reliabledone.com/logo.png"
+      }
+    },
+    "datePublished": "2026-06-25T15:00:00+09:00",
+    "dateModified": "2026-06-25T15:00:00+09:00"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "자동차보험 안들면 하루만 미가입해도 과태료가 나오나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "네, 단 하루만 의무보험에 가입되어 있지 않더라도 과태료가 발생합니다. 자가용 승용차 기준으로 10일 이내인 경우 대인배상I 만원, 대물배상 5천원으로 총 1만 5천원의 기본 과태료가 청구됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "무보험 상태로 차를 몰다가 사고를 내면 어떻게 되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "무보험 상태로 운행 중 사고를 일으키면 자동차손해배상 보장법 위반으로 1년 이하의 징역 또는 1천만 원 이하의 벌금에 해당하는 형사처벌을 받게 됩니다. 더불어 상대방에게 입힌 신체적, 재산적 손해 전체에 대해 민사상 전액 자비로 배상해야 합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "차를 전혀 타지 않고 세워두기만 해도 자동차보험에 가입해야 하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "네, 그렇습니다. 도로를 주행하지 않고 마당이나 주차장에 세워두는 경우라 하더라도, 차량이 구청이나 지자체에 말소 등록되지 않고 정상 등록되어 있다면 법적으로 무조건 책임보험(의무보험)에 상시 가입되어 있어야 합니다."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    
+    :root {
+      --primary: #1e293b;
+      --secondary: #3b82f6;
+      --accent: #0f766e;
+      --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+      --highlight-bg: #f0fdf4;
+      --highlight-border: #bbf7d0;
+      --error-bg: #fef2f2;
+      --error-border: #fecaca;
+      --warning-bg: #fffbeb;
+      --warning-border: #fef3c7;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      word-break: keep-all;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 5px solid var(--secondary);
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      margin: 0 0 15px 0;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      font-size: 1.15em;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #cbd5e1;
+      font-weight: 300;
+    }
+
+    nav {
+      background-color: #0f172a;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    h2 {
+      font-size: 1.75em;
+      color: var(--primary);
+      margin-top: 0;
+      margin-bottom: 25px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #e2e8f0;
+      font-weight: 700;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--secondary);
+    }
+
+    h3 {
+      font-size: 1.3em;
+      color: #1e3a8a;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      text-align: justify;
+    }
+
+    strong {
+      color: #000000;
+    }
+
+    .info-box {
+      background-color: var(--highlight-bg);
+      border-left: 6px solid #22c55e;
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .info-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .info-box li {
+      margin-bottom: 10px;
+      color: #1e293b;
+    }
+
+    .warning-box {
+      background-color: var(--error-bg);
+      border-left: 6px solid #ef4444;
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .warning-box p {
+      margin: 0;
+      color: #7f1d1d;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      font-size: 0.95em;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #cbd5e1;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: var(--secondary);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1.05em;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-btn:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
+    .cta-btn-accent {
+      background-color: var(--accent);
+    }
+
+    .cta-btn-accent:hover {
+      background-color: #115e59;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 1em;
+      box-sizing: border-box;
+      background-color: #f8fafc;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="number"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--secondary);
+      background-color: #ffffff;
+      outline: none;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .calculator-wrapper {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    .result-panel {
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 25px;
+      display: none;
+    }
+
+    .result-panel h4 {
+      margin-top: 0;
+      color: #1e40af;
+      font-size: 1.15em;
+      margin-bottom: 15px;
+    }
+
+    .result-value {
+      font-size: 1.6em;
+      font-weight: 900;
+      color: #1d4ed8;
+      margin: 10px 0;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      background-color: #f1f5f9;
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      border: 1px solid #e2e8f0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 20px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      font-size: 1.1em;
+      color: var(--primary);
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .flex-child {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .bar-chart-simulated {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .bar-item {
+      margin-bottom: 15px;
+    }
+
+    .bar-label {
+      font-size: 0.9em;
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bar-track {
+      background-color: #e2e8f0;
+      height: 24px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background-color: var(--secondary);
+      border-radius: 12px;
+      transition: width 1s ease-out;
+    }
+
+    .bar-fill.accent {
+      background-color: var(--accent);
+    }
+
+    .quiz-container {
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 30px 0;
+    }
+
+    .quiz-option {
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .quiz-option:hover {
+      border-color: var(--secondary);
+      background-color: #f0f7ff;
+    }
+
+    .quiz-feedback {
+      margin-top: 15px;
+      font-weight: 700;
+      display: none;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #94a3b8;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 5px solid var(--secondary);
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 40px 15px;
+      }
+      header h1 {
+        font-size: 1.8em;
+      }
+      section {
+        padding: 25px 15px;
+      }
+      nav ul {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>자동차보험 안들면 발생하는 처벌 및 과태료 완벽 가이드</h1>
+    <p>법적인 의무 가입 규정과 미가입 시 일자별 누적 과태료, 무보험 운행 적발 시의 형사상 리스크를 포함하여 2026년 최신 정보로 꼼꼼하게 정리해 드립니다.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#legal-basis">법적 가입 의무</a></li>
+      <li><a href="#fine-calculator">과태료 계산기</a></li>
+      <li><a href="#criminal-penalties">형사 처벌 기준</a></li>
+      <li><a href="#average-insurance">연령별 평균 금액</a></li>
+      <li><a href="#saving-strategy">보험 절약 설계</a></li>
+      <li><a href="#official-resources">공식 신뢰 기관</a></li>
+      <li><a href="#consulting-form">전문 맞춤 상담</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <section id="legal-basis">
+      <h2>자동차보험 안들면 벌어지는 치명적인 세 가지 위기</h2>
+      <p>대한민국 법률에 따르면 차량을 소유한 등록 소유자는 도로 운행 여부와 관계없이 의무적으로 가입을 유지해야 합니다. 만약 이를 소홀히 하여 단 하루라도 공백기가 생긴다면 예외 없이 제재 대상이 됩니다. 많은 분이 바쁜 일상 속에서 만기 갱신 시점을 놓치거나 깜빡하여 뒤늦게 가산된 고지서를 받고 당황하시는 경우가 많습니다.</p>
+      
+      <p>단순한 실수라 하더라도 과태료 처분을 비껴가기는 어렵습니다. 또한 무보험 상태에서 가벼운 주행이라도 하다가 적발될 시에는 단순 행정처분을 넘어 형사처벌 대상이 될 수 있어 주의가 요구됩니다. 아래의 세 가지 핵심 위기 요소를 미리 확인해 두시기 바랍니다.</p>
+
+      <div class="warning-box">
+        <p><strong>주요 고지 사항:</strong> 도로를 달리지 않고 마당이나 사유지 주차장에 차량을 계속 방치해 두었다 하더라도, 행정관청에 완전히 말소 등록 처리가 완료되지 않은 정상 상태의 차량이라면 법적으로 책임보험 가입이 무조건 필수적입니다.</p>
+      </div>
+
+      <h3>1. 행정적 과태료 청구</h3>
+      <p>의무 담보 미가입에 따른 행정처분은 지체 없이 실행됩니다. 비사업용 자가용 기준으로 미가입 일수가 10일 이내일 때 부과되는 기본금부터 시작해, 11일째부터는 매일 추가 정액이 가산되어 최고 90만 원에 달하는 무거운 금액이 부과됩니다. 사업용이나 이륜차는 가산율과 최고 한도가 다르게 설정되어 있습니다.</p>
+
+      <h3>2. 번호판 영치 및 운행 금지</h3>
+      <p>가입 의무를 지속해서 위반한 경우, 특별자치도지사나 시장, 군수, 구청장 등 지자체장은 강제 집행의 일환으로 차량 등록번호판 영치 조치를 취할 수 있습니다. 번호판이 영치된 무보험 차량은 도로 위로의 운행이 물리적 및 법적으로 불가능해지며, 이를 무시하고 주행하다 적발되면 더 큰 추가 처벌을 받게 됩니다.</p>
+
+      <h3>3. 무보험 주행 시 형사 기소 및 송치</h3>
+      <p>만약 가입이 누락된 상태에서 차를 직접 도로로 몰고 나가 운전하다 순찰이나 무인 카메라, 혹은 가벼운 접촉 사고로 인해 적발될 경우에는 형사사건으로 간주됩니다. 자동차손해배상 보장법 제46조 제2항에 따라 즉시 고발 대상이 되어 특별사법경찰관의 조사를 거친 뒤, 1년 이하의 징역형이나 1000만 원 이하의 벌금형에 처하는 기소가 행해질 수 있습니다.</p>
+    </section>
+
+    <section id="fine-calculator">
+      <h2>지자체별 차종별 미가입 과태료 상세 비교 및 일할 산정</h2>
+      <p>의무보험은 대인배상I과 대물배상 2천만 원 한도를 지칭합니다. 이 요건을 맞추지 못했을 때 부과되는 누적 세부 액수를 체계화한 비교 자료입니다. 2026년도 기준 제도를 적용한 구체적인 도표를 확인해 보세요.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>차량 용도 및 구분</th>
+            <th>10일 이하 기본 부과액</th>
+            <th>11일 이후 매 1일 가산액</th>
+            <th>부과 가능한 최고한도</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>비사업용 개인 자가용</strong></td>
+            <td>15,000 원</td>
+            <td>하루당 6,000 원씩 가산</td>
+            <td>최고 900,000 원</td>
+          </tr>
+          <tr>
+            <td><strong>사업용 및 영업용 차량</strong></td>
+            <td>65,000 원</td>
+            <td>하루당 18,000 원씩 가산</td>
+            <td>최고 2,300,000 원</td>
+          </tr>
+          <tr>
+            <td><strong>오토바이 및 이륜차</strong></td>
+            <td>9,000 원</td>
+            <td>하루당 1,800 원씩 가산</td>
+            <td>최고 300,000 원</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="calculator-wrapper">
+        <h3>직접 해보는 자동차보험 미가입 과태료 가상 계산기</h3>
+        <p>자신이 보유한 차량 종류와 가입이 누적되어 지연된 예상 일수를 기입하면, 법률 시행령에 근거해 청구될 누적 예상 납부액을 즉각 산출해 드립니다.</p>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="calc-vehicle-type">차량 구분 선택</label>
+            <select id="calc-vehicle-type">
+              <option value="private">비사업용 개인 자가용</option>
+              <option value="business">사업용 및 영업용 차량</option>
+              <option value="motorcycle">오토바이 및 이륜차</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calc-days">미가입 일수 입력</label>
+            <input type="number" id="calc-days" min="1" max="365" placeholder="예시: 15" value="15">
+          </div>
+        </div>
+        
+        <button type="button" class="cta-btn" onclick="calculateFine()">즉시 예상 금액 산출하기</button>
+
+        <div id="calculator-result" class="result-panel">
+          <h4>가상 산정 결과 리포트</h4>
+          <p id="calc-breakdown">입력하신 조건에 따른 법정 청구 금액은 다음과 같습니다.</p>
+          <div class="result-value" id="calc-final-value">0 원</div>
+          <p id="calc-note" style="margin: 10px 0 0; font-size: 0.9em; color: var(--text-muted);"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="criminal-penalties">
+      <h2>고의성 판단 여부와 실질적인 형사 입건 기준</h2>
+      <p>단순 주차 상태에서 미가입 고지서를 받아 과태료만 납부하고 끝나는 상황과 달리, 무보험 차량을 실제 노상에서 직접 운행하여 주행 상태를 유지하다 단속 기기에 잡히거나 접촉 및 인사 손해 피해를 동반한 사고가 났을 때는 사안이 급속도로 엄중해집니다.</p>
+
+      <div class="flex-container">
+        <div class="flex-child">
+          <p>법원과 특별사법경찰관이 의무보험 미가입 운행자를 기소해 실형 선고나 높은 벌금형을 구형할 때 핵심 지표로 두는 요건은 바로 고의성 입증입니다. 단순히 자동 연장 갱신이 당연히 되었을 것으로 신뢰한 상황이거나, 결제 계좌의 잔액 부족으로 잠시 인출이 막혀 한시적인 미가입 상태였음을 소명한 때에는 형사 기소 기각 혹은 무혐의 처분이나 기소유예 처분을 받을 확률이 있습니다.</p>
+          <p>반면, 다른 이의 소유로 등록된 차를 장기간 빌려 주행하면서 필수 계약이 해지되었음을 충분히 인식 가능했거나, 과거에 동일한 무보험 주행 전과가 존재하여 상습성이 명백한 경우에는 변론의 여지 없이 기소 처분되어 공판이 청구될 수 있습니다.</p>
+        </div>
+        
+        <div class="flex-child">
+          <div class="bar-chart-simulated">
+            <div class="bar-label">
+              <span>단순 만기 경과 방치 (과태료 99% 부과)</span>
+              <span>최대 90만원</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 45%;"></div>
+            </div>
+            <div style="margin-top: 15px;"></div>
+            <div class="bar-label">
+              <span>무보험 무면허 상태 도로 주행 적발</span>
+              <span>1년이하 징역 1천만원 벌칙</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill accent" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>무보험 상태로 가혹한 사고를 내어 상대측에 중대한 피해를 입힌 경우라면, 일반적인 자동차손해배상 보장 규정이 막혀 형사 처벌 감경 약식 기소 특례인 교통사고처리특례법 혜택을 조금도 보장받지 못하게 됩니다. 결과적으로 피해자와의 민사적 사적 합의금 마련을 포함해 대단히 혹독한 사법 부담을 떠안게 됩니다.</p>
+    </section>
+
+    <section id="average-insurance">
+      <h2>연령대별 평균 가입 시세 및 차량 가치별 예상 유지 비용</h2>
+      <p>법적인 억제 장치가 완비되어 있음에도 불구하고, 일부 운전자가 필수 계약의 유지에 공백을 노출하는 배경에는 역시 가파르게 인상되는 납입금의 무게가 가장 큰 요인으로 작용합니다. 통계 지표를 바탕으로 연령대별 및 대표 브랜드 라인업 모델별 연간 예상 견적 추세를 알아보겠습니다.</p>
+
+      <p>특히 운전 경력이 상대적으로 적은 만 21세 이하 및 만 24세 이하에 속하는 젊은 가입 계층이나 새롭게 면허를 따 최초 가입을 진행하는 신규 청년 가입자의 요율 등급은 매우 낮게 배정되므로, 기본 산출 비용이 높게 형상됩니다. 연령별 평균 실질 가격대 시뮬레이션 지표를 참고하십시오.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>구분 및 주요 연령 구간</th>
+            <th>연간 예상 평균 가격 범위</th>
+            <th>주요 통계적 특성 및 인상 요인</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>만 21세 미만 독자 설계</strong></td>
+            <td>180만 ~ 320만 원</td>
+            <td>경력 가산 부재 및 사고율 최고 등급 가중치 부여</td>
+          </tr>
+          <tr>
+            <td><strong>만 24세 이하 과기 청년</strong></td>
+            <td>140만 ~ 240만 원</td>
+            <td>연령 한정 할인 특약 진입에 따른 보폭 조정 구간</td>
+          </tr>
+          <tr>
+            <td><strong>만 26세 이상 성인 가입</strong></td>
+            <td>90만 ~ 160만 원</td>
+            <td>보편적 기초 요율 안정화로 실질 요금 감소 시작</td>
+          </tr>
+          <tr>
+            <td><strong>만 30세 이상 숙련 운전자</strong></td>
+            <td>60만 ~ 110만 원</td>
+            <td>다양한 가족 단위 결합 및 무사고 3년차 경인 혜택 수혜</td>
+          </tr>
+          <tr>
+            <td><strong>만 40대 및 50대 이상 시니어</strong></td>
+            <td>50만 ~ 95만 원</td>
+            <td>제일 싼곳을 직접 고를 수 있는 요율 우량 등급 도달</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>차량 등급별 기본 납입금 편차의 실태</h3>
+      <p>연령 외에도 차량의 배기량, 출고가, 수리 시 소요되는 자차 부품값 단가에 따라 금액 폭이 나뉩니다. 아반떼, 그랜저, 쏘렌토, 제네시스 같은 대중적인 국산차 브랜드부터 시작해 고급 사양인 렉서스 세단 모델군이나 첨단 전기차 센서가 장착된 테슬라 차량 등의 경우, 보장 범위 선택에 따라 천차만별의 실제 유지 견적이 조율되므로 사전에 계산기로 직접 비교 계산해 보는 지혜가 필요합니다.</p>
+    </section>
+
+    <section id="saving-strategy">
+      <h2>실시간 다이렉트 견적 시스템을 통한 비용 최소화 기법</h2>
+      <p>의무 가입을 빠뜨려 매일 부과되는 무거운 벌과금을 마주하기 전, 합리적인 다이렉트 온라인 채널과 실시간 비교 어플을 경유하여 자신에게 완벽히 튜닝된 저렴한 상품을 선택하는 것이 가장 확실한 예방 방법입니다. 직접 방문하지 않고 웹에서 스스로 조회하는 방식의 장단점을 다음과 같이 대조해 볼 수 있습니다.</p>
+
+      <div class="info-box">
+        <p><strong>경로 선택에 따른 구체적 차이점 분석:</strong></p>
+        <ul>
+          <li><strong>인터넷 다이렉트 비대면 계약 방식:</strong> 전문 설계사의 대면 개입 마진이나 오프라인 지점 임대 유지 수수료가 원천적으로 제거되어 보장을 동일하게 묶더라도 대략 15%에서 많게는 20% 이상 세이브 효과가 있습니다.</li>
+          <li><strong>대면 전속 설계 상담 서비스 방식:</strong> 매월 고지 요금은 무겁지만 개인이 파악하기 까다로운 맞춤 특약 보장을 밀착해서 조율해 주고 귀찮은 사고 청구 접수를 온전히 전담 대행해 준다는 일체형 관리의 장점이 확실합니다.</li>
+        </ul>
+      </div>
+
+      <p>인터넷이나 전용 모바일 앱을 거치면 실시간으로 각 브랜드 상품 순위를 즉석에서 볼 수 있어 유리합니다. 특히 신규 가입 기간에 수시로 개최되는 풍성한 프로모션을 연계하면 주유 모바일 상품권이나 사은품 지급 혜택, 대형 카드사 청구 지원금 및 캐시백 현금지원 등 다양한 부가 이벤트에 참여해 추가로 실제 체감 부담을 대폭 누그러뜨릴 수 있습니다.</p>
+
+      <div class="quiz-container">
+        <h3>의무보험 상식 검증 미니 퀴즈</h3>
+        <p>평소 알고 있던 지식이 정확한지 재미있는 문항을 풀며 확인해 보세요.</p>
+        <div id="quiz-block">
+          <p><strong>문항 1. 개인 자가용 차량을 일체 도로에서 타지 않고 주차장에 방치했을 때, 의무보험을 안 들어도 법적 면제가 인정될까요?</strong></p>
+          <div class="quiz-option" onclick="submitQuiz(1, 'no')">A. 면제된다. 타지 않으면 가입 의무가 없다.</div>
+          <div class="quiz-option" onclick="submitQuiz(1, 'yes')">B. 면제 안 된다. 번호판이 말소되지 않았다면 상시 의무 가입이다.</div>
+          <div class="quiz-feedback" id="quiz-fb-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interactive-simulator">
+      <h2>나의 연령 및 차량 맞춤형 평균 보험 가격 가상 모형 시뮬레이터</h2>
+      <p>각종 커뮤니티인 디시인사이드, 보배드림, 에펨코리아의 게시판에서 올라오는 내돈내산 성공담과 비교 추천 자료를 모아 지능형 AI 가설 모형을 구축했습니다. 본인의 조건을 간략히 누르면 가상의 연간 산출 평균치와 연계 특약 요소를 즉석 시뮬레이션해 보여 드립니다.</p>
+
+      <div class="calculator-wrapper">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="sim-age">적용 나이대 선택</label>
+            <select id="sim-age">
+              <option value="21">만 21세 이하 주력 가입층</option>
+              <option value="24">만 24세 이하 성실 가입층</option>
+              <option value="26">만 26세 이상 안정 진입층</option>
+              <option value="35">만 30대 이상 평균 숙련층</option>
+              <option value="45">만 40대 및 50대 장기 우량층</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sim-model">소지 차량 종류군</label>
+            <select id="sim-model">
+              <option value="avante">아반떼 준중형 국산 세단</option>
+              <option value="grandeur">그랜저 최고 준대형 국산 세단</option>
+              <option value="sorento">쏘렌토 패밀리 중형 SUV</option>
+              <option value="genesis">제네시스 프리미엄 고급 라인업</option>
+              <option value="lexus">렉서스 하이브리드 수입 명가</option>
+              <option value="tesla">테슬라 첨단 전기 자율주행 차량</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sim-exp">본인 운전 이력</label>
+            <select id="sim-exp">
+              <option value="new">최초 신규 면허 등록자</option>
+              <option value="mid">1년 이상 3년 미만 준초보</option>
+              <option value="pro">3년 이상 무사고 숙련자</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="cta-btn cta-btn-accent" onclick="runPriceSimulation()">나의 맞춤형 시뮬레이션 돌려보기</button>
+
+        <div id="sim-result-panel" class="result-panel">
+          <h4>지능형 AI 모델 분석 결과 리포트</h4>
+          <p id="sim-summary">입력 정보를 분석하여 아래의 지표를 산출해 내었습니다.</p>
+          <div class="result-value" id="sim-price-range">0 원</div>
+          <p id="sim-advise" style="margin-top: 15px; color: var(--text-main); line-height: 1.6;"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="official-resources">
+      <h2>법률적 검증 및 공신력 확보를 위한 공식 외부 기관</h2>
+      <p>위험을 철저히 억제하고 현명한 법률 판단을 지속하기 위해 참고하실 수 있는, 보험다모아를 제외한 국가 공인 신용 외부 도메인 정보를 투명하게 개방합니다. 상세 조항은 각 연계 지면을 참조하여 전문 지식을 검토해 보십시오.</p>
+      
+      <p>특히 아래의 첫 번째 법률 및 보험 비교 분석 허브를 활용하면 실시간 요율 정리를 한눈에 볼 수 있으니 유념해 참고하시기를 바랍니다.</p>
+
+      <ul>
+        <li style="margin-bottom: 12px;">
+          <a href="https://bohumpromotionl.cafe24.com/" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); font-weight: 700; text-decoration: underline;">
+            다이렉트 자동차보험 비교 분석 전문 센터 (reliabledone.com 통합 포털)
+          </a>: 본인의 조건에 부합하는 연령별 실제 할인 우대 특약과 최저 비용 매칭을 심도 있게 분석 제공하는 핵심 채널입니다.
+        </li>
+        <li style="margin-bottom: 12px;">
+          <a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: underline;">
+            나무위키 자동차보험 상세 백과사전
+          </a>: 민사상 보장 내역의 상세 구조와 보장 조건별 법적 차이점을 알기 쉬운 언어로 기술해 둔 통합 집단지성 공간입니다.
+        </li>
+        <li style="margin-bottom: 12px;">
+          <a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: underline;">
+            국가법령정보센터 자동차손해배상 보장법
+          </a>: 의무보험 미가입 시 떨어지는 범칙조항 및 각 과태료 한도액 기준 등 시행규칙 조문 원본을 꼼꼼하게 열람할 수 있습니다.
+        </li>
+        <li style="margin-bottom: 12px;">
+          <a href="https://fine.fss.or.kr" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: underline;">
+            금융감독원 금융소비자 정보포털 파인
+          </a>: 소비자 보호 구제 시스템 및 가입 시 누락을 막기 위한 전산 관리망 조회 서비스를 직관적으로 확인해 보실 수 있습니다.
+        </li>
+        <li style="margin-bottom: 12px;">
+          <a href="https://www.koroad.or.kr" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: underline;">
+            도로교통공단 통합 웹 서비스
+          </a>: 도로운행 조건 하에 필수 등록 법령 위반 적발 시 진행되는 구체적인 행정 처분 교육 정보를 관할합니다.
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>자주 묻는 질문 및 상세 답변 (FAQ)</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Q1. 만기 갱신일이 일요일인데 당일 결제가 안 되면 월요일 아침에 처리해도 괜찮을까요?</div>
+        <div class="faq-answer">
+          <p>법률상 공백 기간의 적용은 주말 여부나 휴무 여부를 가리지 않고 아주 냉정하게 카운트됩니다. 일요일 당일까지 갱신이 진행되지 않아 효력이 상실된다면 월요일에 결제하는 한나절 사이라 할지라도 하루 치의 미가입 공백 과태료가 산정되어 행정 고지될 수 있으므로, 최소 만기 영업일 3일 전에 사전에 미리 끝내시는 행동이 무조건 유리합니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Q2. 무보험 차량으로 사고를 내면 형사적 벌금 납부 외에 상대 피해자 배상은 어떻게 해결되나요?</div>
+        <div class="faq-answer">
+          <p>가장 치명적인 리스크입니다. 대인배상 무한 담보나 대물 고액 담보가 전혀 없는 상태이기 때문에 가입되지 않은 담보 영역을 초과해 발생한 가해 액수 일체는 예외 없이 본인 개인 재산과 자비로 메꾸어야 합니다. 정부 보장 사업을 통해 피해자가 치료 지원금을 우선 조치 받아 해결하더라도 해당 보상 기금 운영처에서 무보험 유발 가해자 본인에게 사후 전액 구상권을 실행해 청구하므로 큰 빚을 장기간 안게 됩니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Q3. 부모님 차량을 며칠만 함께 몰고 싶을 때는 어떻게 대처하는 것이 비용상 효율적인가요?</div>
+        <div class="faq-answer">
+          <p>임시 운전자 특별 약정을 이틀에서 사흘 전 미리 다이렉트 어플로 부모님 명의 계약서에 부가하거나 일일 단기 원데이 전용 인터넷 앱 가입 제도를 이용하는 편이 저렴하고 현명합니다. 이 조치 없이 주행하게 되면 단순 대인배상I 외에 종합 보장이 전혀 작용하지 않아 대물 배상 청구에 대해 완전 무방비 무보험 상태에 처하게 됩니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="consulting-form">
+      <h2>전문 설계 및 신속 가입 견적 컨설팅 신청</h2>
+      <p>과태료 걱정 없이 안심하고 소중한 차량을 운용하실 수 있도록, 전문적인 비교 검토를 통해 가장 경제적인 솔루션을 제시해 드립니다. 아래의 필요한 정보 사항을 올바르게 기재해 주시면 신속하게 최선의 가이드를 지원해 드리겠습니다.</p>
+      
+      <form id="insurance-request-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="user-name">상담 수혜자 성함</label>
+            <input type="text" id="user-name" placeholder="홍길동" required>
+          </div>
+          <div class="form-group">
+            <label for="user-phone">연락 수신처 (휴대폰)</label>
+            <input type="tel" id="user-phone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" required>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="car-model-name">소유 차량 구체 모델명</label>
+            <input type="text" id="car-model-name" placeholder="예: 아반떼 CN7 하이브리드" required>
+          </div>
+          <div class="form-group">
+            <label for="driver-age-range">운전자 실제 가입 연령</label>
+            <select id="driver-age-range" required>
+              <option value="">연령 범주를 정해 주세요</option>
+              <option value="young21">만 21세 전후 최저가 탐색군</option>
+              <option value="young24">만 24세 전후 실속 혜택군</option>
+              <option value="adult26">만 26세 이상 합리 요율군</option>
+              <option value="mature30">만 30대 이상 우대 할인군</option>
+              <option value="senior50">만 50대 이상 최적 안심군</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="user-message">가입 문의 사항 및 요구 특약</label>
+          <textarea id="user-message" rows="4" placeholder="비대면 할인 및 토스, 구글 등 연계 모바일 혜택 정보가 궁금하시거나 무보험 탈출 맞춤형 가격이 궁금하시다면 세부 사항을 자유롭게 적어 주십시오."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label style="font-weight: 400; font-size: 0.9em; color: var(--text-muted);">
+            <input type="checkbox" id="privacy-agree" required style="margin-right: 8px;">
+            개인정보 수집 및 상담 제공을 위한 연락 및 활용 제반 조건에 엄격히 동의합니다.
+          </label>
+        </div>
+
+        <button type="submit" class="cta-btn">맞춤 상담 신청 및 실시간 견적 확인하기</button>
+      </form>
+      
+      <div id="form-success-message" class="result-panel" style="background-color: #f0fdf4; border-color: #bbf7d0;">
+        <h4 style="color: #166534;">신청이 안전하게 접수되었습니다</h4>
+        <p style="color: #166534; margin: 0;">작성해주신 정보를 기반으로 2026년 요율에 맞춰 최적의 추천 자료를 준비하여 남겨주신 전화를 통해 연락드리겠습니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>검색어 관련 연관 트렌드 및 참고 카테고리</h2>
+      <div class="tag-cloud">
+        <span class="tag">자동차보험 안들면</span>
+        <span class="tag">책임보험 미가입 과태료</span>
+        <span class="tag">만 21세 자동차보험 평균 가격</span>
+        <span class="tag">다이렉트 자동차보험 비교 사이트</span>
+        <span class="tag">무보험 운행 형사 기소</span>
+        <span class="tag">번호판 영치 집행 기준</span>
+        <span class="tag">수입차 자차 보험 할인</span>
+        <span class="tag">신규 운전자 보험료 얼마</span>
+        <span class="tag">토스 앱 연동 캐시백 이벤트</span>
+        <span class="tag">에펨코리아 보배드림 가입 후기</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function calculateFine() {
+      const type = document.getElementById('calc-vehicle-type').value;
+      const days = parseInt(document.getElementById('calc-days').value);
+      
+      if (isNaN(days) || days < 1) {
+        alert('올바른 지연 일수를 기입해 주세요.');
+        return;
+      }
+
+      let totalFine = 0;
+      let breakdownText = '';
+      let maxFine = 0;
+
+      if (type === 'private') {
+        maxFine = 900000;
+        if (days <= 10) {
+          totalFine = 15000;
+          breakdownText = '10일 이하 기본 행정 처분 정액이 적용되었습니다.';
+        } else {
+          totalFine = 15000 + (days - 10) * 6000;
+          breakdownText = '10일 기본 금액 (15,000원) + 10일 초과 일수(' + (days - 10) + '일)에 대한 일별 가산액 (6,000원) 누적치입니다.';
+        }
+      } else if (type === 'business') {
+        maxFine = 2300000;
+        if (days <= 10) {
+          totalFine = 65000;
+          breakdownText = '10일 이하 사업용 자동차 기본 정액이 적용되었습니다.';
+        } else {
+          totalFine = 65000 + (days - 10) * 18000;
+          breakdownText = '10일 기본 금액 (65,000원) + 10일 초과 일수(' + (days - 10) + '일)에 대한 영업용 일별 가산액 (18,000원) 누적치입니다.';
+        }
+      } else if (type === 'motorcycle') {
+        maxFine = 300000;
+        if (days <= 10) {
+          totalFine = 9000;
+          breakdownText = '10일 이하 이륜차 기본 의무보험 정액이 적용되었습니다.';
+        } else {
+          totalFine = 9000 + (days - 10) * 1800;
+          breakdownText = '10일 기본 금액 (9,000원) + 10일 초과 일수(' + (days - 10) + '일)에 대한 이륜차 일별 가산액 (1,800원) 누적치입니다.';
+        }
+      }
+
+      if (totalFine > maxFine) {
+        totalFine = maxFine;
+        breakdownText += ' 해당 차종 법정 한도 도달로 최고 부과 상한금만 청구됩니다.';
+      }
+
+      document.getElementById('calc-breakdown').innerText = breakdownText;
+      document.getElementById('calc-final-value').innerText = totalFine.toLocaleString() + ' 원';
+      document.getElementById('calc-note').innerText = '비고: 미가입 차를 무단 주행할 경우 형사고발이 추가될 수 있습니다.';
+      document.getElementById('calculator-result').style.display = 'block';
+    }
+
+    function runPriceSimulation() {
+      const age = document.getElementById('sim-age').value;
+      const model = document.getElementById('sim-model').value;
+      const exp = document.getElementById('sim-exp').value;
+
+      let basePrice = 1000000;
+      let modelMultiplier = 1.0;
+      let expMultiplier = 1.0;
+      let adviseText = '';
+
+      if (age === '21') {
+        basePrice = 2200000;
+        adviseText = '만 21세 연령대는 부모님 밑으로 1인 지정 피보험자로 묶어 경력을 올린 뒤 분가하는 편이 다이렉트 단독 가입보다 최대 40% 이상 저렴한곳이 많습니다.';
+      } else if (age === '24') {
+        basePrice = 1600000;
+        adviseText = '만 24세는 연령 한정 특별 할인 구간으로 점진적 하락세를 보입니다. 블랙박스 및 티맵 안전 주행 혜택을 연동하면 더 큰 폭으로 차감됩니다.';
+      } else if (age === '26') {
+        basePrice = 1100000;
+        adviseText = '만 26세 이후부터는 비대면 온라인 브랜드 비교 시 가격 경쟁력이 크게 올라가므로 사은품 및 지원금을 꼼꼼히 확인해 제일 싼곳을 직접 조율하시는 것을 추천합니다.';
+      } else if (age === '35') {
+        basePrice = 750000;
+        adviseText = '만 30세 이상 연령은 가입 종류가 매우 풍부해지므로 다이렉트 계산기 앱이나 토스 및 카카오페이 등 스마트 플랫폼 어플을 거쳐 맞춤 혜택을 다채롭게 수령 가능합니다.';
+      } else {
+        basePrice = 600000;
+        adviseText = '만 40대 이상 무사고 등급이 높은 장기 운전자는 추가 장비 안전장치 할인 등을 다방면으로 결합해 연간 수십만 원의 고정 유지비를 아끼실 수 있는 최적기입니다.';
+      }
+
+      if (model === 'avante') modelMultiplier = 0.9;
+      else if (model === 'grandeur') modelMultiplier = 1.15;
+      else if (model === 'sorento') modelMultiplier = 1.1;
+      else if (model === 'genesis') modelMultiplier = 1.4;
+      else if (model === 'lexus') modelMultiplier = 1.6;
+      else if (model === 'tesla') modelMultiplier = 1.8;
+
+      if (exp === 'new') expMultiplier = 1.35;
+      else if (exp === 'mid') expMultiplier = 1.1;
+      else expMultiplier = 0.85;
+
+      const minEstimate = Math.round((basePrice * modelMultiplier * expMultiplier * 0.85) / 10000) * 10000;
+      const maxEstimate = Math.round((basePrice * modelMultiplier * expMultiplier * 1.15) / 10000) * 10000;
+
+      document.getElementById('sim-price-range').innerText = '연간 약 ' + minEstimate.toLocaleString() + ' 원 ~ ' + maxEstimate.toLocaleString() + ' 원';
+      document.getElementById('sim-advise').innerText = adviseText + ' 위 금액은 자차(자기차량손해) 담보 가입 여부 및 사고이력 할인 등급에 따라 개인별 차이가 존재할 수 있습니다.';
+      document.getElementById('sim-result-panel').style.display = 'block';
+    }
+
+    function submitQuiz(questionNum, answer) {
+      const feedback = document.getElementById('quiz-fb-1');
+      feedback.style.display = 'block';
+      if (answer === 'yes') {
+        feedback.innerText = '정답입니다! 운행하지 않더라도 정상 등록 차량은 법적으로 반드시 상시 유지 상태여야 정기 검사 불합격 및 과태료 발송을 회피할 수 있습니다.';
+        feedback.style.color = '#15803d';
+      } else {
+        feedback.innerText = '아쉽지만 오답입니다. 차량을 몰지 않아도 지자체 소유 명의가 유지되는 한, 책임보험 의무는 무조건 면제되지 않고 소급 가산됩니다.';
+        feedback.style.color = '#b91c1c';
+      }
+    }
+
+    function toggleFaq(element) {
+      const answer = element.nextElementSibling;
+      if (answer.style.display === 'none' || !answer.style.display) {
+        answer.style.display = 'block';
+      } else {
+        answer.style.display = 'none';
+      }
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const agree = document.getElementById('privacy-agree').checked;
+      if (!agree) {
+        alert('상담 진행을 위한 개인정보 처리방침에 먼저 서명 동의해 주세요.');
+        return;
+      }
+
+      document.getElementById('insurance-request-form').reset();
+      document.getElementById('form-success-message').style.display = 'block';
+    }
+
+    // Initialize FAQ states
+    document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+  </script>
+  
